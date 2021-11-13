@@ -32,8 +32,8 @@ var solveCmd = &cobra.Command{
 	Use:   "solve",
 	Short: "Provide a word list based on a given set of criteria.",
 	Long: `This tool takes the inputs from the Spelling Bee game
-	on the NY Times website and returns a set of all of the words
-	in the passed word list that meet the game's criteria. `,
+on the NY Times website and returns a set of all of the words
+in the passed word list that meet the game's criteria. `,
 	Run: func(cmd *cobra.Command, args []string) {
 		fmt.Println("solve called")
 	},
