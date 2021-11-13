@@ -30,13 +30,10 @@ import (
 // solveCmd represents the solve command
 var solveCmd = &cobra.Command{
 	Use:   "solve",
-	Short: "A brief description of your command",
-	Long: `A longer description that spans multiple lines and likely contains examples
-and usage of using your command. For example:
-
-Cobra is a CLI library for Go that empowers applications.
-This application is a tool to generate the needed files
-to quickly create a Cobra application.`,
+	Short: "Provide a word list based on a given set of criteria.",
+	Long: `This tool takes the inputs from the Spelling Bee game
+	on the NY Times website and returns a set of all of the words
+	in the passed word list that meet the game's criteria. `,
 	Run: func(cmd *cobra.Command, args []string) {
 		fmt.Println("solve called")
 	},
